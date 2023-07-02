@@ -14,7 +14,7 @@
 </tr>
 <tr>
 <td>1</td>
-<td>Thanmai</td>
+<td>Mani</td>
 <td>19</td>
 <td>passed</td>
 </tr>
