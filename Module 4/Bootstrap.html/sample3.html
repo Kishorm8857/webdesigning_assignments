@@ -1,0 +1,60 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-top: 20px;
+            width: 100px;
+            height:20px;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Solve All</h1>
+    <label> Enter a number</label>
+    <input type = "text" placeholder="Ente value" id = "no">
+    <br>
+    <button id = "prime" onclick="prime()">
+        Prime
+    </button>
+    <button id = "factorial" onclick="factorial()">
+        Factorial
+    </button>
+    <script>
+    function prime()
+    {
+       let n = document.getElementById("no").value
+       let p = true;
+       for (i = 2; i <n;i++)
+       {
+        if (n%i == 0)
+        {
+            p = false;
+        }
+       }
+       document.write(p);
+    }
+
+    function factorial()
+    {
+       let n = document.getElementById("no").value
+       let f =1;
+       for (i = 1;i<=n;i++)
+       {
+        f = f* i;
+       }
+       document.write(f);
+    }
+    </script>
+</body>
+</html>
